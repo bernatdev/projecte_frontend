@@ -1,0 +1,2 @@
+# projecte_frontend
+Gossera
