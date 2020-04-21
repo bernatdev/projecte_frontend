@@ -1,0 +1,10 @@
+Usuari administrador
+- afegir nous gossos (foto, sexe, nom, naixement, raça, descripció)
+- modificar gossos existents (salut, urgència, dades)
+- suprimir gossos (morts/adopcions)
+- consultar registre d'adopcions 
+
+Usuari públic
+- introduir dades personals (en cas de confirmar adopció)
+- buscar gossos (filtre raça, edat, etc.)
+- visualitzar adopcions urgents 
