@@ -1,0 +1,82 @@
+.bloc {
+    width: 980px;
+    border: 1px solid black;
+    margin: auto;
+    background: lightgreen;
+    padding: 5px 40px 0px 40px;
+}
+
+body {
+    background: lightgray;
+}
+
+header {
+    padding: 0 0 90px;
+}
+
+#adminlogin {
+    text-align: right;
+    float:right;
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+#logo-header {
+    float: left;
+    text-decoration: none;
+}
+
+#site-name {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+nav {
+    background-color: green;
+    height: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    padding-top: 3px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0px 40px 1px 40px;
+    border-right: 3px solid #fff;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+td {
+    padding: 20px;
+}
+
+#nom,#raza,#year {
+    text-align:center;
+    font-family: arial;
+}
+
+#nom {
+    font-weight: bold;
+}
+
+
+article {
+    margin-bottom: 30px;
+}
+
+footer {
+    bottom: 0;
+    text-align:center;
+}
