@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Bernat Rovira">
+        <meta name="description" content="Projecte gossera">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title> Projecte gossera</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- El meu CSS 
+        <link rel="stylesheet" href="estils.css">
+        -->
+    </head>
+
+    <body class="bg-success">
+
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top ">
+            <a href="#" class="navbar-brand"><img src="img/logo_paw.png" style="width:80px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="menu">
+                <ul class="navbar-nav navbar-nav  ">
+                    <li class="nav-item"><a href="index.html" class="nav-link font-weight-bold">Inici</a></li>
+                    <li class="nav-item"><a href="urgents.html" class="nav-link font-weight-bold">Urgents</a></li>
+                    <li class="nav-item"><a href="adoptats.html" class="nav-link font-weight-bold">Adoptats</a></li>
+                    <li class="nav-item"><a href="contacte.html" class="nav-link font-weight-bold">Contacte</a></li>
+                    <form action="miformulario.php" method="post" class="form-inline">
+                        <input type="text" placeholder="Cercar" class="form-control mr-sm-2">
+                        <button class="btn btn-success font-weight-bold" type="submit">Cercar</button>
+                    </form>
+                </ul>
+                <a href="login.html" class="nav-item ml-md-auto"><span
+                        class="badge badge-warning ">Identificació</span></a>
+                <a href="registre.html" class="nav-item ml-1"><span class="badge badge-warning ">Registre</span></a>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid " style="margin-top:80px; padding-top: 30px;">
+
+
+            <ul class="pagination pagination-md justify-content-center">
+                <li class="page-item "><a class="page-link" href="index.html">Previ</a></li>
+                <li class="page-item "><a class="page-link" href="index.html">1</a></li>
+                <li class="page-item active"><a class="page-link" href="index02.html">2</a></li>
+                <li class="page-item disabled"><a class="page-link" href="index03.html">Següent</a></li>
+
+            </ul>
+
+            <div class="row text-center ">
+                <div class="col-md-4 p-3 ">
+
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#rantan01">
+                        <img src="img/11_rantanplan.jpg" class="rounded" style="height: 200px; width:200px;">
+                    </button>
+                    <h3 id="nom"><span class="badge badge-danger">Rantanplan</span></h3>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="rantan01">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Rantanplan</h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-justify">
+                                    <img src="img/11_rantanplan.jpg" class="rounded"
+                                        style="height: 400px; width:400px;"><br>
+                                    Rantanplan és un pastor belga. A més d'estúpid, Rantanplan és increïblement lent i
+                                    sol tenir accidents i múltiples confusions. De totes maneres, és un bon gos que
+                                    seguirà al seu amo fins a la fi del món. Té molta gana i devorarà qualsevol cosa
+                                    que se li posi davant, tant si és comestible com si no, sobretot pastilles de sabó.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tancar</button>
+                                    <a class="btn btn-danger" href="contacte.html" role="button">Adoptar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3 ">
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#santa12">
+                        <img src="img/12_santa.png" class="rounded" style="height: 200px; width:200px;">
+                    </button>
+                    <h3 id="nom"><span class="badge badge-danger">SantaClaus</span></h3>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="santa12">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">SantaClaus</h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-justify">
+                                    <img src="img/12_santa.png" class="rounded" style="height: 400px; width:400px;"><br>
+                                    En Santa és un llebrer rescatat de les curses d'un canòdrom. És molt entremaliat i
+                                    juganer, li agrada molt el menjar i les femelles. La seva beguda preferida és
+                                    l'aigua del vàter, mentre que el seu menjar favorit són corcs i entranyes. El seu
+                                    passatemps favorit és destrossar diaris, o també enterrar petits electrodomèstics al
+                                    pati.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tancar</button>
+                                    <a class="btn btn-danger" href="contacte.html" role="button">Adoptar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3 ">
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#scooby13">
+                        <img src="img/13_scooby.jpg" class="rounded" style="height: 200px; width:200px;">
+                    </button>
+                    <h3 id="nom"><span class="badge badge-danger">ScoobyDoo</span></h3>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="scooby13">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">ScoobyDoo</h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-justify">
+                                    <img src="img/13_scooby.jpg" class="rounded"
+                                        style="height: 400px; width:400px;"><br>
+                                    Scooby és un gran danès que destaca per la seva covardia i peculiar fam. Té molts
+                                    problemes per bordar correctament.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tancar</button>
+                                    <a class="btn btn-danger" href="contacte.html" role="button">Adoptar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3 ">
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#snoopy14">
+                        <img src="img/14_snoopy.jpg" class="rounded" style="height: 200px; width:200px;">
+                    </button>
+                    <h3 id="nom"><span class="badge badge-danger">Snoopy</span></h3>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="snoopy14">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="snoopy14">Snoopy</h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-justify">
+                                    <img src="img/14_snoopy.jpg" class="rounded"
+                                        style="height: 400px; width:400px;"><br>
+                                    Snoopy és un beagle que adora dormir. Té diversos alter-egos, com el d'escriptor
+                                    frustrat o aviador de combat. Pot usar les seves orelles com a hèlix per
+                                    desplaçar-se. Manté una relació dominant amb el seu amo, invertint absolutament els
+                                    papers.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tancar</button>
+                                    <a class="btn btn-danger" href="contacte.html" role="button">Adoptar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 p-3 ">
+                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#sultan15">
+                        <img src="img/15_sultan.jpg" class="rounded" style="height: 200px; width:200px;">
+                    </button>
+                    <h3 id="nom"><span class="badge badge-danger">Sultan</span></h3>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="sultan15">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Sultan</h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-justify">
+                                    <img src="img/15_sultan.jpg" class="rounded"
+                                        style="height: 400px; width:400px;"><br>
+                                    Sultan és un gos fidel i intel·ligent. És capaç de caminar sobre les potes
+                                    posteriors i vestir-se com un humà.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary "
+                                        data-dismiss="modal">Tancar</button>
+                                    <a class="btn btn-danger " href="contacte.html" role="button">Adoptar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="text-center text-light bg-dark fixed-bottom" style="height: 30px;">
+            <p>&#169; 2020 - La gossera d'en Bernat</p>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
