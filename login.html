@@ -29,9 +29,10 @@
                     <li class="nav-item"><a href="urgents.html" class="nav-link font-weight-bold">Urgents</a></li>
                     <li class="nav-item"><a href="adoptats.html" class="nav-link font-weight-bold">Adoptats</a></li>
                     <li class="nav-item"><a href="contacte.html" class="nav-link font-weight-bold">Contacte</a></li>
-                    <form action="miformulario.php" method="post" class="form-inline">
-                        <input type="text" placeholder="Cercar" class="form-control mr-sm-2">
+                    <form action="cerca.php" method="post" class="form-inline" onsubmit="return ValidarCerca()" id="form_cerca" nom="form_cerca">
+                        <input type="text" placeholder="Cercar" id="mot_cerca" class="form-control mr-sm-2">
                         <button class="btn btn-success font-weight-bold" type="submit">Cercar</button>
+                        <div class="invalid-feedback" id="error_mot_cerca"></div>
                     </form>
                 </ul>
                 <a href="login.html" class="nav-item ml-md-auto"><span
@@ -40,38 +41,24 @@
             </div>
         </nav>
 
-        <div class="container-fluid " style="margin-top:80px; padding-top: 30px;">
+        <div class="container " style="margin-top:80px; padding-top: 30px;">
 
-            <div class="row">
-
-                <div class="col-md-4 mx-auto">
-
-                    <form>
-                        <div class="form-group row">
-                            <label for="correu"
-                                class="col-sm-4 col-form-label text-light font-weight-bold">Email</label>
-                            <div class="col-sm-10">
-                                <input type="email" class="form-control" id="correu" placeholder="Correu electrònic">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="password"
-                                class="col-sm-4 col-form-label text-light font-weight-bold">Password</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="password" placeholder="Contrasenya">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-sm-10">
-                                <button type="submit" class="btn btn-danger font-weight-bold">Identifica'm !</button>
-                            </div>
-                        </div>
-                    </form>
-
-
+            <form class="col-md-4 mx-auto bg-light rounded p-3" method="POST" action="identificat.php" id="form_login"
+                onsubmit="return ValidarLogin()" name="form_login">
+                <div class="form-group ">
+                    <label for="correu" class="col-form-label font-weight-bold">Email</label>
+                    <input type="text" class="form-control" id="correu" placeholder="Correu electrònic">
+                    <div class="invalid-feedback" id="error_correu"></div>
                 </div>
-            </div>
+                <div class="form-group ">
+                    <label for="contrasenya" class="col-form-label font-weight-bold">Password</label>
+                    <input type="password" class="form-control" id="contrasenya" placeholder="Contrasenya">
+                    <div class="invalid-feedback" id="error_contrasenya"></div>
+                </div>
+                <button type="submit" class="btn btn-danger font-weight-bold">Identifica'm !</button>
+            </form>
+
+
         </div>
 
         <div class="text-center text-light bg-dark fixed-bottom" style="height: 30px;">
@@ -89,6 +76,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <script src="valid_login.js"></script>
+        <script src="valid_cerca.js"></script>
     </body>
 
 </html>

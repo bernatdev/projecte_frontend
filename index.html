@@ -29,9 +29,11 @@
                     <li class="nav-item"><a href="urgents.html" class="nav-link font-weight-bold">Urgents</a></li>
                     <li class="nav-item"><a href="adoptats.html" class="nav-link font-weight-bold">Adoptats</a></li>
                     <li class="nav-item"><a href="contacte.html" class="nav-link font-weight-bold">Contacte</a></li>
-                    <form action="miformulario.php" method="post" class="form-inline ">
-                        <input type="text" placeholder="Cercar" class="form-control mr-sm-2">
+                    <form action="cerca.php" method="post" class="form-inline" onsubmit="return ValidarCerca()"
+                        id="form_cerca" nom="form_cerca">
+                        <input type="text" placeholder="Cercar" id="mot_cerca" class="form-control mr-sm-2">
                         <button class="btn btn-success font-weight-bold" type="submit">Cercar</button>
+                        <div class="invalid-feedback" id="error_mot_cerca"></div>
                     </form>
                 </ul>
                 <a href="login.html" class="nav-item ml-md-auto"><span
@@ -254,6 +256,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
+        <script src="valid_cerca.js"></script>
     </body>
 
 </html>
