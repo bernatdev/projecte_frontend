@@ -5,6 +5,7 @@ var mot_cerca = document.getElementById("mot_cerca");
 form_cerca.addEventListener('blur', (event) => {
     console.log(event);
     if (event.target.value != '') event.target.classList.remove('is-invalid');
+    ValidarCerca();
 }, true);
 
 // funció de validació

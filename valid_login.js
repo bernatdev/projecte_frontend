@@ -6,6 +6,7 @@ var contrasenya = document.getElementById("contrasenya");
 form_login.addEventListener('blur', (event) => {
     console.log(event);
     if (event.target.value != '') event.target.classList.remove('is-invalid');
+    ValidarLogin();
 }, true);
 
 

@@ -8,6 +8,7 @@ var correu = document.getElementById("correu");
 form_contacte.addEventListener('blur', (event) => {
     console.log(event);
     if (event.target.value != '') event.target.classList.remove('is-invalid');
+    ValidarContacte();
 }, true);
 
 // funció de validació

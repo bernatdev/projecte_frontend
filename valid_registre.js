@@ -8,11 +8,14 @@ var correu = document.getElementById("correu");
 var contrasenya = document.getElementById("contrasenya");
 var contrasenya2 = document.getElementById("contrasenya2");
 
-// Configuració event listener
-form_registre.addEventListener('blur', (event) => {
-    console.log(event);
-    if (event.target.value != '') event.target.classList.remove('is-invalid');
+// Configuració event listener 
+
+form_registre.addEventListener("blur", (event) => {
+	console.log(event);
+	if(event.target.value!='') event.target.classList.remove('is-invalid');
+    ValidarRegistre();
 }, true);
+
 
 // funció de validació
 function ValidarRegistre() {
@@ -57,7 +60,7 @@ function ValidarRegistre() {
         mobil.classList.add("is-invalid");
         document.getElementById("error_mobil").textContent = "El mòbil és obligatori";
         acumErrors++;
-    } else if (!validar_mobil(mobil)) {
+    } else if (!validar_mobil(mobil.value)) {
         mobil.classList.add("is-invalid");
         document.getElementById("error_mobil").innerText = "El mòbil ha de contenir com a mínim 9 xifres.\nHa de contenir 9 xifres, i pot afegir el prefixe 34";
         acumErrors++;
